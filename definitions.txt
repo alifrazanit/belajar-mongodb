@@ -1,0 +1,18 @@
+Konsep                      MongoDB (NoSQL)                     PostgreSQL(SQL)
+Database                    database                            database
+Tabel                       collection                          table
+Baris / Row                 document (BSON/JSON)                Row
+Kolom                       field                               column
+Skema (struktur Data)       Tidak Wajib                         Wajib
+Primary Key	                _id (otomatis/ObjectId)	            PRIMARY KEY (definable)
+Foreign Key	                Tidak native (manual ref)	        FOREIGN KEY (native)
+Join antar tabel	        $lookup (Agregasi)	                JOIN (LEFT, INNER, dsb)
+Query Bahasa	            BSON / JSON query object	        SQL
+Index	                    createIndex()	                    CREATE INDEX
+View	                    view (sejak v3.4)	                VIEW
+Stored Procedure	        idak native (pakai JS)	            Native (PL/pgSQL)
+Trigger	                    Pakai Change Stream	                TRIGGER
+Transaction	                Sejak MongoDB 4.0 (multi-doc)	    Native sejak lama
+Relationship	            Embedded / Referenced	            Normalized (foreign keys)
+CLI Shell	                mongo shell / mongosh	            psql
+ORM (umum digunakan)	    Mongoose, Prisma	                Prisma, TypeORM, Sequelize
