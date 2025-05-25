@@ -1,3 +1,4 @@
+# UPDATE ARRAY SESUAI INDEX
 db.products.updateMany({}, {
     $set:{
         'ratings.0': 50,

@@ -1,3 +1,4 @@
+# MENGUPDATE ARRAY PERTAMA
 db.products.updateMany({}, {
     $set:{
         ratings: [90, 80, 70]

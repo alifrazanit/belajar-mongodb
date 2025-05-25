@@ -1,3 +1,4 @@
+# UPDATE SESUAI KONDISI FILTERS
 db.products.updateMany({}, {
     $set: {
         ratings: [90, 80, 70]
