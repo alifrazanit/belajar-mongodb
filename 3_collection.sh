@@ -24,3 +24,5 @@ db.<name>
 
 # Mendapatkan informasi semua collection
 db.getCollectionInfos()
+
+db.system.users.find()

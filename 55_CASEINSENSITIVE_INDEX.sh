@@ -13,7 +13,14 @@ db.customers.createIndex({
 | 2        | Case insensitive, tapi sensitive pada aksen                       |
 | 3        | Case dan accent sensitive (pembandingan default)                  |
 
-db.customers.find({ full_name: 'Alif Razan Saputra' })
+db.customers.find({
+    full_name: "Alif Razan Saputra"
+},{
+    collation: {
+        locale: 'en',
+        strength: 2
+    }
+})
 
 # FITUR LIKE DALAM MONGO
 db.customers.find({ full_name: { $regex: '^alif', $options: 'i' } });
